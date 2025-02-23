@@ -37,7 +37,7 @@ export async function getAccountWithTransactions(accountId) {
       _count: {
         select: { transactions: true },
       },
-    },
+    }, 
   });
 
   if (!account) return null;

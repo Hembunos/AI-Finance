@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { toast } from "sonner";
+import { updateDefaultAccount } from "@/actions/accounts";
 
 export function AccountCard({ account }) {
   const { name, type, balance, id, isDefault } = account;
